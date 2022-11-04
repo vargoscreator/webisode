@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *,
 *::after,
@@ -83,7 +84,6 @@ body{
 }
 .logo{
     position: relative;
-    z-index: 99;
 }
 .header__logo-img{
     margin-right: 12px;
@@ -116,6 +116,7 @@ body{
     color: #FFFFFF;
     border: 2px solid #015239;
     transition: 0.1s;
+    cursor: pointer;
 }
 
 .header__menu-link:hover{
@@ -144,6 +145,12 @@ body{
     align-items: center;
     text-align: center;
     position: relative;
+}
+.main__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .main__title{
     font-family: 'Aladin';
@@ -561,32 +568,25 @@ body{
 
 @media (max-width: 750px) {  
     
-
-
+    .logo{
+        z-index: 99;
+    }
     .starting__right-img{
         width: 200px;
     }
     .starting__left-img{
         width: 220px;
     }
-
     .webisode__inner{
         display: block;
     }
-
     .webisode__photo:first-child .webisode__photo-item:first-child{
         padding-top: 0;
     }
     .webisode__photo:last-child .webisode__photo-item:last-child{
         padding-top: 0;
-    }
-
-
-
-    
-
+    }  
     /*--------- HEADER ----------*/
-
     .header{
         position: fixed;
         z-index: 99;
@@ -690,6 +690,15 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .header__menu-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .header__menu-link{
+        font-size: 18px;
     }
 }
 

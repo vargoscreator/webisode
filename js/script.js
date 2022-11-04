@@ -37,6 +37,7 @@ window.addEventListener('click', function(event){
       counterWrapper.classList.toggle('active'); 
   }
 });
+
 $(".footer__box").on("click", ".footer__item", function() {
 	$(".footer__item").removeClass("select");
 	let index = $(this).index();
